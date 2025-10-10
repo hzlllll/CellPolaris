@@ -24,6 +24,7 @@ import scanpy as sc
 
 import seaborn as sns
 import anndata as ad
+
 from sklearn.decomposition import PCA
 
 from velocyto.estimation import colDeltaCorpartial, colDeltaCor
@@ -972,3 +973,4 @@ def identifying_important_TFs(adata, goi=None, deltaX_path=None, trajectorys=Non
 
     inner_product_score_TF = pd.DataFrame.from_dict(inner_product_score_temp, orient='index', columns=[goi])
     return inner_product_score_TF
+
