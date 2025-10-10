@@ -16,6 +16,7 @@ from sklearn.preprocessing import MinMaxScaler
 import time
 import sys
 from sklearn.preprocessing import StandardScaler
+
 # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 device = torch.device("cpu")
 #
@@ -520,3 +521,4 @@ if __name__ == "__main__":
 time_end = time.time()
 run_time = time_end - time_start
 print(f"Run times：{run_time:.2f}秒")
+
